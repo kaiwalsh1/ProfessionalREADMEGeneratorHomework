@@ -1,0 +1,22 @@
+{
+  "name": "professionalreadmegeneratorhomework",
+  "version": "1.0.0",
+  "description": "# TeamProfileGeneratorHomework By: Kai Walsh",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kaiwalsh1/ProfessionalREADMEGeneratorHomework.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kaiwalsh1/ProfessionalREADMEGeneratorHomework/issues"
+  },
+  "homepage": "https://github.com/kaiwalsh1/ProfessionalREADMEGeneratorHomework#readme",
+  "dependencies": {
+    "inquirer": "^8.2.0"
+  }
+}
