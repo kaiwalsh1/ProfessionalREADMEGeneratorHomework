@@ -11,6 +11,9 @@ ${answers.description}
 - [Usage] (#Usage)
 - [Credits] (#Credits)
 - [License] (#License)
+- [Contributing](#Contributing)
+- [Tests](#Tests)
+- [Questions](#Questions)
 
 ## Installation
 ${answers.installation}
@@ -35,6 +38,10 @@ ${answers.howToContribute}
 
 ## Tests
 ${answers.tests}
+
+## Questions
+GitHub: ${answers.username}
+Contact Me: ${answers.email}
     `
 };
 
