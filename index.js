@@ -37,9 +37,9 @@ inquirer
             name: 'credits',
         },
         {
-            type: 'checkbox',
-            message: 'Choose a license for your application',
-            choices: ['License preferred by the community', 'MIT License', 'GNU GPLv3', 'None of the above']
+            type: 'list',
+            message: 'Choose a license type for your application',
+            choices: ['MIT', "Mozilla", 'Apache', 'Boost', 'Eclipse', 'IBM', 'Zlib', 'No license'],
             name: 'license',
         },
         {
@@ -49,7 +49,7 @@ inquirer
         },
         {
             type: 'input',
-            message: 'What are the features of your project',
+            message: 'Are there contribution guidelines for this project?',
             name: 'howToContribute',
         },
         {
@@ -57,9 +57,20 @@ inquirer
             message: 'What are the features of your project',
             name: 'tests',
         },
+        {
+            type: 'input',
+            message: 'What is your GitHub username?',
+            name: 'username',
+        },
+        {
+            type: 'input',
+            message: 'What is your email?',
+            name: 'email',
+        },
     ]).then(answers => {
         fs.writeFile(
-            `README.md`, 
+            // to not confuse README file
+            `READMEGenerator.md`, 
             readMeMaker(answers), 
             err => err ? console.error(err) : console.log('Success'));
     });
