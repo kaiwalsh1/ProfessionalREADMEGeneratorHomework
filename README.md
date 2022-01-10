@@ -1,6 +1,5 @@
 # ProfessionalREADMEGeneratorHomework
 
-# TeamProfileGeneratorHomework
 By: Kai Walsh
 
 ## Built With
