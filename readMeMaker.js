@@ -1,5 +1,4 @@
-// TODO: Create a function that returns a license badge based on which license is passed in
-// If there is no license, return an empty string
+// license badge for license passed in
 function renderLicenseBadge(license) {
     if (license === "MIT") {
         return "[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)";
@@ -18,10 +17,9 @@ function renderLicenseBadge(license) {
     } else {
         return "";
     };
-}
+};
 
-// TODO: Create a function that returns the license link
-// If there is no license, return an empty string
+// license section of table of contents
 function renderLicenseLink(license) {
     if (license === "No license") {
         return ""
@@ -30,8 +28,7 @@ function renderLicenseLink(license) {
     }
 }
 
-// TODO: Create a function that returns the license section of README
-// If there is no license, return an empty string
+// license section of readme
 function renderLicenseSection(license) {
     if (license === "No license") {
         return "";
@@ -41,7 +38,7 @@ function renderLicenseSection(license) {
     }
 };
 
-
+// READMEGenerator 
 const createReadMeForUser = (answers) => {
     return `
 ## ${answers.project}
