@@ -69,12 +69,5 @@ inquirer
             err ? console.error(err) : console.log('Success!'));
     })
 
-    {
-        type: 'checkbox',
-        message: 'Check all elements you would like to include in the table of contents',
-        choices: ['Installation', 'Usage', 'Credits', 'License'],
-        name: 'tableOfContents',
-    },
-
 
 
