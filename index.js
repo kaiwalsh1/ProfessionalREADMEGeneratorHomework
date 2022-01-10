@@ -20,6 +20,7 @@ inquirer
             message: 'What is a description of your project?',
             name: 'description',
         },
+// table of contents
         {
             type: 'input',
             message: 'What are the steps required to install your project?',
@@ -36,8 +37,9 @@ inquirer
             name: 'credits',
         },
         {
-            type: 'input',
-            message: 'Write license, if applicable',
+            type: 'checkbox',
+            message: 'Choose a license for your application',
+            choices: ['License preferred by the community', 'MIT License', 'GNU GPLv3', 'None of the above']
             name: 'license',
         },
         {
@@ -45,14 +47,19 @@ inquirer
             message: 'What are the features of your project',
             name: 'features',
         },
-    ])
-    .then((answers) => {
+        {
+            type: 'input',
+            message: 'What are the features of your project',
+            name: 'howToContribute',
+        },
+        {
+            type: 'input',
+            message: 'What are the features of your project',
+            name: 'tests',
+        },
+    ]).then(answers => {
         fs.writeFile(
             `README.md`, 
             readMeMaker(answers), 
-            (err) => 
-            err ? console.error(err) : console.log('Success!'));
-    })
-
-
-
+            err => err ? console.error(err) : console.log('Success'));
+    });

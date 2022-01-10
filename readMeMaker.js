@@ -1,34 +1,41 @@
 const createReadMeForUser = (answers) => {
     return `
-    ## ${answers.project}
-    By: ${answers.name}
+## ${answers.project}
+By: ${answers.name}
 
-    ## Description
-    ${answers.description}
+## Description
+${answers.description}
 
-    ## Table of Contents
-    - [Installation] (#installation)
-    - [Usage] (#usage)
-    - [Credits] (#credits)
-    - [License] (#license)
+## Table of Contents
+- [Installation] (#Installation)
+- [Usage] (#Usage)
+- [Credits] (#Credits)
+- [License] (#License)
 
-    ## Installation
-    ${answers.installation}
+## Installation
+${answers.installation}
 
-    ## Usage
-    ${answers.usage}
-    ![alt text] ()
+## Usage
+${answers.usage}
+![alt text] ()
 
-    ## Credits
-    ${answers.credits}
+## Credits
+${answers.credits}
 
-    ## License
-    ${answers.license}
+## License
+${answers.license}
 
-    ## Features
-    ${answers.features}
+---
 
+## Features
+${answers.features}
 
-    `;
+## How to Contribute
+${answers.howToContribute}
+
+## Tests
+${answers.tests}
+    `
 };
+
 module.exports = createReadMeForUser;
