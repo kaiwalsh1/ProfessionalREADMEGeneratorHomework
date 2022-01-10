@@ -17,23 +17,8 @@ inquirer
 // Description
         {
             type: 'input',
-            message: 'What was your motivation?',
-            name: 'motivation',
-        },
-        {
-            type: 'input',
-            message: 'Why did you build this project?',
-            name: 'theWhy',
-        },
-        {
-            type: 'input',
-            message: 'What problem does it solve?',
-            name: 'problemSolve',
-        },
-        {
-            type: 'input',
-            message: 'What did you learn?',
-            name: 'learn',
+            message: 'What is a description of your project?',
+            name: 'description',
         },
         {
             type: 'input',
@@ -52,7 +37,7 @@ inquirer
         },
         {
             type: 'input',
-            message: 'What are the steps required to install your project?',
+            message: 'Write license, if applicable',
             name: 'license',
         },
         {

@@ -4,11 +4,7 @@ const createReadMeForUser = (answers) => {
     By: ${answers.name}
 
     ## Description
-    The motivation behind this project was ${answers.motivation}.
-    This project was built ${answers.theWhy}.
-    This project solves ${answers.problemSolve}.
-    I learned ${answers.learn}.
-
+    ${answers.description}
 
     ## Table of Contents
     - [Installation] (#installation)
@@ -21,9 +17,7 @@ const createReadMeForUser = (answers) => {
 
     ## Usage
     ${answers.usage}
-    ``md
-    ![alt text] (assets/images/screenshot.png)
-    ``
+    ![alt text] ()
 
     ## Credits
     ${answers.credits}
