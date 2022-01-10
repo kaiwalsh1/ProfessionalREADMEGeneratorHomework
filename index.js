@@ -54,7 +54,7 @@ inquirer
         },
         {
             type: 'input',
-            message: 'What are the features of your project',
+            message: 'Are there any test instructions for your application? If so, provide examples on how to run them.',
             name: 'tests',
         },
         {
