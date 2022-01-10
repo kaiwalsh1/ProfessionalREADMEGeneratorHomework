@@ -19,7 +19,8 @@ You must install the Inquirer package to use this application.
 Dynamically generate a professional READMEGenerator.md file for any project.
 
 Video
-![alt text]()
+![video](https://watch.screencastify.com/v/8dGDAQtmgtob4YItni2r)
+![screenshot](./develop/assets/Screenshot.png)
 
 ## Credits
 Used Google and class videos to build this application
